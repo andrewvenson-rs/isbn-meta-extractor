@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ISBN Meta Extraction</title>
+  </head>
+  <body>
+    <h1>ISBN Meta Extraction</h1>
+    <button onClick="pasteIsbns()">Dump ISBNS</button>
+    <div style="display: flex">
+      <div>
+        <h4 style="text-align: center">ISBN DUMP</h4>
+        <div
+          id="isbn-dump"
+          style="
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            background-color: whitesmoke;
+            border: 1px solid lightgray;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            content: none;
+            width: 150px;
+            min-height: 300px;
+          "
+        ></div>
+        <div style="display: flex; justify-content: center">
+          <button style="margin-top: 5px" onClick="clearISBNDump()">
+            Clear Dump
+          </button>
+        </div>
+      </div>
+      <div>
+        <h4 style="text-align: center">SRP Base Price</h4>
+        <div
+          id="isbn-dump"
+          style="
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            background-color: whitesmoke;
+            border: 1px solid lightgray;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            content: none;
+            width: 150px;
+            min-height: 300px;
+          "
+        ></div>
+        <div style="display: flex; justify-content: center">
+          <button style="margin-top: 5px" onClick="clearISBNDump()">
+            Copy SRP Price Dump
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
